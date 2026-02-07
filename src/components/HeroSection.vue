@@ -1,37 +1,17 @@
-<script setup>
-const scrollToContact = () => {
-  document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })
-}
-</script>
-
 <template>
   <header class="hero">
     <div class="hero-inner">
       <div class="avatar" aria-hidden="true">FB</div>
       <h1 class="hero-title">Programar é o meu esporte!</h1>
       <p class="hero-subtitle">
-        Engenheiro de Computação (ITA) · Desenvolvedor · Cyber Security
+        Engenheiro de Computação (ITA) · Software Engineer
       </p>
-      <div class="hero-cta">
-        <button type="button" class="btn" @click="scrollToContact">
-          Vamos conversar?
-        </button>
-      </div>
       <nav class="hero-links" aria-label="Redes sociais">
-        <a
-          href="https://github.com/felipebomfim"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hero-link"
-        >
+        <a href="https://github.com/felipebomfim" target="_blank" rel="noopener noreferrer" class="hero-link">
           GitHub
         </a>
-        <a
-          href="https://www.linkedin.com/in/felipe-dos-santos-bomfim"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="hero-link"
-        >
+        <a href="https://www.linkedin.com/in/felipe-dos-santos-bomfim" target="_blank" rel="noopener noreferrer"
+          class="hero-link">
           LinkedIn
         </a>
       </nav>
@@ -81,10 +61,6 @@ const scrollToContact = () => {
   margin: 0 0 2rem;
 }
 
-.hero-cta {
-  margin-bottom: 2rem;
-}
-
 .hero-links {
   display: flex;
   gap: 1.5rem;
@@ -96,6 +72,7 @@ const scrollToContact = () => {
   color: var(--color-accent);
   font-weight: 500;
 }
+
 .hero-link:hover {
   color: var(--color-text);
   text-decoration: none;

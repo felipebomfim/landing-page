@@ -2,7 +2,20 @@
 const groups = [
   {
     title: 'Desenvolvimento',
-    items: ['Java', 'Spring Boot', 'JavaScript', 'Web Development'],
+    items: [
+      'Java',
+      'Spring Boot',
+      'JavaScript',
+      'Web Development',
+      'Git',
+      'Shell Script',
+      'Docker',
+      'Python',
+      'Vue',
+      'HTML',
+      'CSS',
+      'Bancos de dados SQL',
+    ],
   },
   {
     title: 'Segurança',
@@ -10,20 +23,14 @@ const groups = [
   },
   {
     title: 'Outros',
-    items: [
-      'Git',
-      'Shell Script',
-      'Bancos de Dados NoSQL',
-      'Sistemas Operacionais',
-      'Redes',
-    ],
+    items: ['Sistemas Operacionais', 'Redes'],
   },
   {
     title: 'Idiomas',
     items: [
       'Português (nativo)',
       'Inglês (profissional)',
-      'Espanhol (intermediário)',
+      'Espanhol (básico)',
     ],
   },
 ]
@@ -33,18 +40,10 @@ const groups = [
   <section class="section" id="habilidades" aria-labelledby="skills-title">
     <h2 id="skills-title" class="section-title">Habilidades e Tecnologias</h2>
     <div class="skills-grid">
-      <div
-        v-for="(group, i) in groups"
-        :key="i"
-        class="skill-group"
-      >
+      <div v-for="(group, i) in groups" :key="i" class="skill-group">
         <h3 class="skill-group-title">{{ group.title }}</h3>
         <ul class="skill-list">
-          <li
-            v-for="(item, j) in group.items"
-            :key="j"
-            class="skill-tag"
-          >
+          <li v-for="(item, j) in group.items" :key="j" class="skill-tag">
             {{ item }}
           </li>
         </ul>

@@ -7,7 +7,7 @@ const education = [
   },
   {
     name: 'Centro de Instrução de Guerra Eletrônica',
-    title: 'Pós-graduação em Operações Cibernéticas e Guerra Eletrônica',
+    title: 'Pós-graduação em Guerra Cibernética',
     period: '2022',
   },
 ]
@@ -16,8 +16,6 @@ const certifications = [
   'CompTIA PenTest+',
   'Junior Penetration Tester (INE)',
   'Java Programming (Udemy)',
-  'Git/GitHub (DIO)',
-  'Web Components (DIO)',
 ]
 
 const honors = [
@@ -60,6 +58,7 @@ const honors = [
 .edu-block {
   margin-bottom: 2rem;
 }
+
 .edu-block:last-child {
   margin-bottom: 0;
 }
@@ -75,6 +74,7 @@ const honors = [
   margin: 0;
   padding-left: 1.25rem;
 }
+
 .edu-list.tags {
   list-style: none;
   padding-left: 0;
@@ -87,6 +87,7 @@ const honors = [
   margin-bottom: 0.5rem;
   color: var(--color-secondary);
 }
+
 .edu-item .edu-period {
   display: block;
   font-size: 0.9rem;

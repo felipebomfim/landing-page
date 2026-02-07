@@ -1,10 +1,10 @@
 <script setup>
 const jobs = [
   {
-    company: 'Câmara dos Deputados',
-    role: 'Analista Legislativo',
+    company: 'Servidor público',
+    role: 'Software Engineer',
     period: 'ago/2024 — presente',
-    description: 'Atuação em análise e processos legislativos.',
+    description: 'Desenvolvimento de software em Java, Vue, HTML, CSS e JavaScript. Docker, Kubernetes, Jenkins, Git e outras ferramentas.',
   },
   {
     company: 'Força Aérea Brasileira (FAB)',
@@ -18,12 +18,6 @@ const jobs = [
     period: 'jul/2020 — dez/2021',
     description: 'Segurança e análise em ambiente aeroespacial.',
   },
-  {
-    company: 'CCA-SJ',
-    role: 'Software Engineer',
-    period: 'jan/2020 — fev/2020',
-    description: 'Desenvolvimento de software.',
-  },
 ]
 </script>
 
@@ -31,11 +25,7 @@ const jobs = [
   <section class="section" id="experiencia" aria-labelledby="exp-title">
     <h2 id="exp-title" class="section-title">Experiência</h2>
     <div class="timeline">
-      <article
-        v-for="(job, i) in jobs"
-        :key="i"
-        class="timeline-item"
-      >
+      <article v-for="(job, i) in jobs" :key="i" class="timeline-item">
         <div class="timeline-marker" aria-hidden="true" />
         <div class="timeline-content">
           <h3 class="timeline-role">{{ job.role }}</h3>
@@ -59,6 +49,7 @@ const jobs = [
   position: relative;
   padding-bottom: 2rem;
 }
+
 .timeline-item:last-child {
   padding-bottom: 0;
 }
