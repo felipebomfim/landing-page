@@ -1,7 +1,15 @@
 <template>
   <header class="hero">
     <div class="hero-inner">
-      <div class="avatar" aria-hidden="true">FB</div>
+      <div class="terminal-line" aria-hidden="true">
+        <span class="terminal-prompt">$ </span>
+        <h2 class="terminal-name">
+          <template v-for="(char, i) in nameChars" :key="i">
+            <span v-show="i < visibleCount" class="terminal-char">{{ char }}</span>
+          </template>
+          <span class="terminal-cursor">█</span>
+        </h2>
+      </div>
       <h1 class="hero-title">Programar é o meu esporte!</h1>
       <p class="hero-subtitle">
         Engenheiro de Computação (ITA) · Software Engineer
@@ -19,6 +27,33 @@
   </header>
 </template>
 
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const prompt = '$ ';
+const name = 'Felipe Bomfim';
+const nameChars = [...name].map((c) => (c === ' ' ? '\u00A0' : c));
+const visibleCount = ref(0);
+let intervalId = null;
+
+onMounted(() => {
+  const delay = 80;
+  let count = 0;
+  intervalId = setInterval(() => {
+    count++;
+    if (count > nameChars.length) {
+      clearInterval(intervalId);
+      return;
+    }
+    visibleCount.value = count;
+  }, delay);
+});
+
+onUnmounted(() => {
+  if (intervalId) clearInterval(intervalId);
+});
+</script>
+
 <style scoped>
 .hero {
   min-height: 100vh;
@@ -33,19 +68,48 @@
   max-width: 600px;
 }
 
-.avatar {
-  width: 120px;
-  height: 120px;
+.terminal-line {
   margin: 0 auto 1.5rem;
-  border-radius: 50%;
-  background: var(--color-accent);
-  color: var(--color-bg);
-  font-family: var(--font-mono);
-  font-size: 2rem;
-  font-weight: 700;
+  min-height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.terminal-prompt {
+  font-family: var(--font-mono);
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  color: var(--color-accent);
+  user-select: none;
+}
+
+.terminal-name {
+  font-family: var(--font-mono);
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 500;
+  color: var(--color-text);
+  margin: 0;
+  display: inline;
+}
+
+.terminal-char {
+  display: inline-block;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  font-family: var(--font-mono);
+  color: var(--color-accent);
+  animation: cursorBlink 1s step-end infinite;
+  margin-left: 1px;
+}
+
+@keyframes cursorBlink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero-title {
