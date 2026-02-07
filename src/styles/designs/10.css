@@ -1,0 +1,36 @@
+/* Design 10 — Cards */
+.design-10 {
+  --color-bg: #1a1a2e;
+  --color-text: #eee;
+  --color-accent: #e94560;
+  --color-secondary: #a0a0a0;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --content-max: 900px;
+  background-color: var(--color-bg);
+}
+.design-10 .hero {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 20px;
+  margin: 1rem;
+  padding: 3rem 2rem;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+.design-10 .section {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  margin: 1rem auto;
+  padding: 2.5rem;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: calc(var(--content-max) + 2rem);
+}
+.design-10 .project-card {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+}
+.design-10 .project-card:hover {
+  box-shadow: 0 12px 40px rgba(233, 69, 96, 0.15);
+}

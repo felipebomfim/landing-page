@@ -1,0 +1,35 @@
+/* Design 15 — Dot Grid background */
+.design-15 {
+	--color-bg: #13111c;
+	--color-text: #f2f0ff;
+	--color-accent: #bb86fc;
+	--color-secondary: #9381b0;
+	--color-border: rgba(255, 255, 255, 0.08);
+	--font-sans: "Inter", system-ui, sans-serif;
+	--font-mono: "JetBrains Mono", monospace;
+	--content-max: 900px;
+	background-color: var(--color-bg);
+	background-image: radial-gradient(
+		circle,
+		rgba(187, 134, 252, 0.15) 1px,
+		transparent 1px
+	);
+	background-size: 24px 24px;
+}
+.design-15 .nav {
+	background: rgba(19, 17, 28, 0.9);
+	backdrop-filter: blur(8px);
+}
+.design-15 .section {
+	background: rgba(19, 17, 28, 0.6);
+	border-radius: 12px;
+	padding: 2rem;
+}
+.design-15 .hero-inner {
+	background: rgba(19, 17, 28, 0.5);
+	padding: 2rem;
+	border-radius: 12px;
+}
+.design-15 .project-card {
+	background: rgba(19, 17, 28, 0.8);
+}

@@ -1,0 +1,55 @@
+/* Design 05 — Bento Grid */
+.design-05 {
+	--color-bg: #09090b;
+	--color-text: #fafafa;
+	--color-accent: #a78bfa;
+	--color-secondary: #71717a;
+	--color-border: rgba(255, 255, 255, 0.08);
+	--font-sans: "Inter", system-ui, sans-serif;
+	--font-mono: "JetBrains Mono", monospace;
+	--content-max: 1100px;
+	background-color: var(--color-bg);
+}
+.design-05 #app-main {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 1rem;
+	max-width: var(--content-max);
+	margin: 0 auto;
+	padding: 1rem;
+}
+.design-05 .hero {
+	grid-column: 1 / -1;
+	border-radius: 20px;
+	border: 1px solid var(--color-border);
+	padding: 3rem;
+}
+.design-05 .section {
+	background: rgba(255, 255, 255, 0.03);
+	border-radius: 16px;
+	border: 1px solid var(--color-border);
+	padding: 2rem;
+	margin: 0;
+	max-width: none;
+}
+.design-05 .section:nth-child(2) {
+	grid-column: span 7;
+}
+.design-05 .section:nth-child(3) {
+	grid-column: span 5;
+}
+.design-05 .section:nth-child(4) {
+	grid-column: span 5;
+}
+.design-05 .section:nth-child(5) {
+	grid-column: span 7;
+}
+.design-05 .section:nth-child(6) {
+	grid-column: span 12;
+}
+.design-05 .section:nth-child(7) {
+	grid-column: span 12;
+}
+.design-05 .footer {
+	grid-column: 1 / -1;
+}

@@ -1,0 +1,43 @@
+/* Design 20 — Warm Sand / Terracotta */
+.design-20 {
+	--color-bg: #292524;
+	--color-text: #fef3c7;
+	--color-accent: #d97706;
+	--color-secondary: #d6d3d1;
+	--color-border: rgba(217, 119, 6, 0.25);
+	--font-sans: "Inter", system-ui, sans-serif;
+	--font-mono: "JetBrains Mono", monospace;
+	--content-max: 900px;
+	background-color: var(--color-bg);
+}
+.design-20 .nav {
+	background: rgba(41, 37, 36, 0.95);
+	border-bottom: 1px solid var(--color-border);
+}
+.design-20 .avatar {
+	background: linear-gradient(135deg, #b45309, #d97706);
+	color: #292524;
+}
+.design-20 .btn {
+	background: var(--color-accent);
+	color: #fff;
+}
+.design-20 .btn-outline {
+	color: var(--color-accent);
+	border-color: var(--color-accent);
+}
+.design-20 .skill-tag,
+.design-20 .project-tag {
+	background: rgba(217, 119, 6, 0.2);
+	border-color: rgba(217, 119, 6, 0.4);
+	color: var(--color-text);
+}
+.design-20 .timeline-marker {
+	background: var(--color-accent);
+}
+.design-20 .code {
+	color: var(--color-accent);
+}
+.design-20 .footer {
+	border-top-color: var(--color-border);
+}

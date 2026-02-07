@@ -1,0 +1,29 @@
+/* Design 14 — Accent Line (barra colorida à esquerda) */
+.design-14 {
+	--color-bg: #0f1419;
+	--color-text: #e7e9ea;
+	--color-accent: #1d9bf0;
+	--color-secondary: #71767b;
+	--color-border: rgba(255, 255, 255, 0.06);
+	--font-sans: "Inter", system-ui, sans-serif;
+	--font-mono: "JetBrains Mono", monospace;
+	--content-max: 900px;
+	background-color: var(--color-bg);
+}
+.design-14 .section {
+	border-left: 4px solid var(--color-accent);
+	padding-left: 1.5rem;
+	margin-left: 1.5rem;
+	max-width: calc(var(--content-max) - 2rem);
+}
+.design-14 .hero {
+	border-left: 6px solid var(--color-accent);
+	margin-left: 1.5rem;
+	padding-left: 2rem;
+}
+.design-14 .project-card {
+	border-left: 4px solid var(--color-accent);
+}
+.design-14 .nav {
+	border-bottom: 3px solid var(--color-accent);
+}

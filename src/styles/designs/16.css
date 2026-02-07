@@ -1,0 +1,47 @@
+/* Design 16 — Line Minimal (muito espaço, linhas finas) */
+.design-16 {
+	--color-bg: #fafafa;
+	--color-text: #1a1a1a;
+	--color-accent: #1a1a1a;
+	--color-secondary: #737373;
+	--color-border: #e5e5e5;
+	--font-sans: "Inter", system-ui, sans-serif;
+	--font-mono: "JetBrains Mono", monospace;
+	--section-padding: clamp(3rem, 8vw, 6rem);
+	--content-max: 640px;
+	background-color: var(--color-bg);
+}
+.design-16 .nav {
+	background: #fafafa;
+	border-bottom: 1px solid var(--color-border);
+}
+.design-16 .section {
+	padding: var(--section-padding) 1.5rem;
+	border-bottom: 1px solid var(--color-border);
+}
+.design-16 .section:last-of-type {
+	border-bottom: none;
+}
+.design-16 .section-title {
+	font-size: 0.75rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: var(--color-secondary);
+	margin-bottom: 2rem;
+}
+.design-16 .hero-title {
+	font-weight: 400;
+	letter-spacing: -0.03em;
+}
+.design-16 .btn,
+.design-16 .btn-outline {
+	border-radius: 0;
+	border-width: 1px;
+}
+.design-16 .skill-tag,
+.design-16 .project-tag {
+	background: transparent;
+	border: 1px solid var(--color-border);
+	color: var(--color-text);
+}

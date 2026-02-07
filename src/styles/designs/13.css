@@ -1,0 +1,41 @@
+/* Design 13 — Monochrome */
+.design-13 {
+	--color-bg: #111;
+	--color-text: #f5f5f5;
+	--color-accent: #fff;
+	--color-secondary: #888;
+	--color-border: #333;
+	--font-sans: "Inter", system-ui, sans-serif;
+	--font-mono: "JetBrains Mono", monospace;
+	--content-max: 900px;
+	background-color: var(--color-bg);
+}
+.design-13 .nav {
+	background: #0a0a0a;
+	border-bottom: 1px solid var(--color-border);
+}
+.design-13 .nav-link:hover,
+.design-13 .hero-link:hover {
+	color: var(--color-accent);
+}
+.design-13 .code {
+	color: var(--color-text);
+	border-bottom: 1px solid var(--color-secondary);
+}
+.design-13 .btn {
+	background: #fff;
+	color: #111;
+}
+.design-13 .btn-outline {
+	color: #fff;
+	border-color: #fff;
+}
+.design-13 .skill-tag,
+.design-13 .project-tag {
+	background: #222;
+	border: 1px solid #444;
+	color: #f5f5f5;
+}
+.design-13 .timeline-marker {
+	background: #fff;
+}

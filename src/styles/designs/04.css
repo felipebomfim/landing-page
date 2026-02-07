@@ -1,0 +1,50 @@
+/* Design 04 — Brutalist */
+.design-04 {
+  --color-bg: #fff;
+  --color-text: #000;
+  --color-accent: #000;
+  --color-secondary: #333;
+  --color-border: #000;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --content-max: 800px;
+  background-color: var(--color-bg);
+}
+.design-04 .nav {
+  background: #fff;
+  border-bottom: 4px solid #000;
+}
+.design-04 .nav-brand,
+.design-04 .nav-link {
+  color: #000;
+}
+.design-04 .nav-link:hover {
+  text-decoration: underline;
+}
+.design-04 .section-title {
+  border-bottom: 3px solid #000;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+.design-04 .btn {
+  background: #000;
+  color: #fff;
+  border-radius: 0;
+}
+.design-04 .btn-outline {
+  color: #000;
+  border: 3px solid #000;
+  background: transparent;
+}
+.design-04 .skill-tag,
+.design-04 .project-tag {
+  background: #000;
+  color: #fff;
+  border: none;
+}
+.design-04 .timeline-marker {
+  background: #000;
+}
+.design-04 .footer {
+  border-top: 4px solid #000;
+}

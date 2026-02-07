@@ -1,0 +1,35 @@
+/* Design 19 — Narrow Column */
+.design-19 {
+	--color-bg: #18181b;
+	--color-text: #fafafa;
+	--color-accent: #22d3ee;
+	--color-secondary: #71717a;
+	--color-border: rgba(255, 255, 255, 0.06);
+	--font-sans: "Inter", system-ui, sans-serif;
+	--font-mono: "JetBrains Mono", monospace;
+	--content-max: 560px;
+	background-color: var(--color-bg);
+}
+.design-19 .section {
+	max-width: var(--content-max);
+}
+.design-19 .section p {
+	max-width: 55ch;
+}
+.design-19 .hero-inner {
+	max-width: var(--content-max);
+}
+.design-19 .projects-grid {
+	grid-template-columns: 1fr;
+}
+.design-19 .nav-inner {
+	max-width: 720px;
+}
+.design-19 .footer-inner {
+	max-width: var(--content-max);
+}
+.design-19 .skill-tag,
+.design-19 .project-tag {
+	background: rgba(34, 211, 238, 0.12);
+	border-color: rgba(34, 211, 238, 0.25);
+}

@@ -1,0 +1,35 @@
+/* Design 08 — Neon Cyber */
+.design-08 {
+  --color-bg: #0a0a0f;
+  --color-text: #e0ffe0;
+  --color-accent: #00ff88;
+  --color-secondary: #88ffaa;
+  --color-border: rgba(0, 255, 136, 0.3);
+  --font-sans: "JetBrains Mono", monospace;
+  --font-mono: "JetBrains Mono", monospace;
+  --content-max: 900px;
+  background-color: var(--color-bg);
+}
+.design-08 .nav {
+  background: rgba(10, 10, 15, 0.9);
+  border-bottom: 1px solid var(--color-accent);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+}
+.design-08 .hero-title {
+  text-shadow: 0 0 30px rgba(0, 255, 136, 0.5);
+}
+.design-08 .btn {
+  background: var(--color-accent);
+  color: var(--color-bg);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+}
+.design-08 .skill-tag,
+.design-08 .timeline-marker {
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+.design-08 .project-card {
+  border-color: rgba(0, 255, 136, 0.3);
+}
+.design-08 .project-card:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.2);
+}

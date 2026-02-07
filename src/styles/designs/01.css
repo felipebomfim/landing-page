@@ -1,0 +1,16 @@
+/* Design 01 — Original: dark blue, minimal */
+.design-01 {
+  --color-bg: #0f172a;
+  --color-text: #f8fafc;
+  --color-accent: #3b82f6;
+  --color-secondary: #64748b;
+  --color-border: rgba(248, 250, 252, 0.1);
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --content-max: 900px;
+  background-color: var(--color-bg);
+}
+.design-01 .nav {
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(8px);
+}

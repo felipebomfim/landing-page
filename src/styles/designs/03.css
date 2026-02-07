@@ -1,0 +1,32 @@
+/* Design 03 — Glassmorphism */
+.design-03 {
+  --color-bg: #1e1b4b;
+  --color-text: #e0e7ff;
+  --color-accent: #a5b4fc;
+  --color-secondary: #818cf8;
+  --color-border: rgba(255, 255, 255, 0.15);
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --content-max: 900px;
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e3a5f 100%);
+}
+.design-03 .nav {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.design-03 .section,
+.design-03 .hero-inner {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+.design-03 .project-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
