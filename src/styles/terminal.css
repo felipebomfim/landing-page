@@ -1,0 +1,28 @@
+/* Tema Terminal / CLI — design único em / */
+.theme-terminal {
+  --color-bg: #0d1117;
+  --color-text: #c9d1d9;
+  --color-accent: #7ee787;
+  --color-secondary: #8b949e;
+  --color-border: #30363d;
+  --font-sans: "JetBrains Mono", "Fira Code", monospace;
+  --font-mono: "JetBrains Mono", monospace;
+  --content-max: 900px;
+  background-color: var(--color-bg);
+}
+
+.theme-terminal .nav {
+  background: rgba(13, 17, 23, 0.95);
+  border-bottom-color: var(--color-accent);
+}
+
+.theme-terminal .hero-title::before {
+  content: "> ";
+  color: var(--color-accent);
+}
+
+.theme-terminal .section-title::before {
+  content: "$ ";
+  color: var(--color-accent);
+  margin-right: 0.25rem;
+}

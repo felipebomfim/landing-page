@@ -27,7 +27,7 @@ function scrollTo(id) {
 </script>
 
 <template>
-  <div class="app">
+  <div class="app theme-terminal">
     <nav class="nav" aria-label="Navegação principal">
       <div class="nav-inner">
         <button type="button" class="nav-brand" @click="scrollTo('top')">
